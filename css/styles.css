@@ -1,0 +1,16 @@
+/* site nav */
+.site-nav a {
+    color: rgba(46, 47, 66, 1);
+}
+
+.site-nav a:hover {
+    color: rgba(64, 75, 191, 1);
+}
+
+.site-nav a:active {
+    color: rgba(64, 75, 191, 1);
+}
+
+ .mail {
+    color: rgba(67, 68, 85, 1);
+}
