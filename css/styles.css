@@ -1,6 +1,38 @@
-/* site nav */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+:root {
+    --primary-text-color: #FFFFFF;
+    --title-text-color: #2E2F42;
+    --link-color: #4D5AE5;
+}
+
+
+/* nav */
+
+.logo {
+display: inline-block;
+width: 71px;
+height: 21px;
+}
+
+.site-nav {
+    background-color: #FFFFFF;
+}
 .site-nav a {
     color: rgba(46, 47, 66, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+
 }
 
 .site-nav a:hover {
@@ -8,9 +40,112 @@
 }
 
 .site-nav a:active {
+    color: #404BBF;
+}
+
+.meil {
+    color: var(--title-text-color);
+}
+
+.phone {
+    color: #434455;;
+}
+
+.list {
+    list-style: none; 
+}
+
+/* уникальный контент */
+body {
+    font-family: "Roboto", "Raleway";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+}
+
+.hero {
+    background-color: var(--title-text-color);
+}
+
+h3 {
+    color: #434455;
+}
+
+p {
+    color: rgba(67, 68, 85, 1);
+}
+
+.section2 {
+    background-color: rgba(244, 244, 253, 1);
+    ;
+}
+
+footer {
+    background-color: rgba(46, 47, 66, 1);
+}
+
+.page-nav {
+    background-color: var(--primary-text-color);
+}
+
+.section2-li {
+    background-color: var(--primary-text-color);
+}
+
+.text {
+    font-size: 16px;
+}
+
+.page-nav a {
+    color: rgba(33, 33, 33, 1);
+}
+
+.page-nav a:hover, 
+.page-nav a:focus {
+    color: rgba(33, 150, 243, 1);
+}
+
+.page-nav a:active {
     color: rgba(64, 75, 191, 1);
 }
 
- .mail {
-    color: rgba(67, 68, 85, 1);
+.button {
+    color: rgba(77, 90, 229, 1);
+}
+
+.button:hover {
+    color: rgba(64, 75, 191, 1)
+}
+
+.section1-title {
+    color: var(--title-text-color);
+}
+
+.section2-title {
+    color: var(--title-text-color);
+}
+
+/* footer */
+.contacts {
+    background-color: var(--title-text-color);
+}
+
+.hero-tittle {
+    font-weight: 700; 
+    font-size: 56px; 
+    letter-spacing: 2%; 
+    line-height: 60px;
+}
+
+.section1-title {
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 2%;
+}
+
+.qualities-title {
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 2%;
 }
