@@ -1,7 +1,3 @@
-html {
-    box-sizing: border-box;
-}
-
 *,
 *::before,
 *::after {
@@ -14,8 +10,31 @@ html {
     --link-color: #4D5AE5;
 }
 
+body {
+    font-family: "Roboto", "Raleway";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+    margin: 0;
+}
 
 /* nav */
+
+.container {
+margin-left: auto;
+margin-right: auto;
+width: 1440px;
+}
 
 .logo {
 display: inline-block;
@@ -23,19 +42,21 @@ width: 71px;
 height: 21px;
 }
 
+.page-header {
+   
+}
+
 .site-nav {
     background-color: #FFFFFF;
 }
+
 .site-nav a {
     color: rgba(46, 47, 66, 1);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
 
-}
-
-.site-nav a:hover {
+.site-nav a:hover
+.site-nav a:focus {
     color: rgba(64, 75, 191, 1);
 }
 
@@ -56,16 +77,46 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* уникальный контент */
-body {
-    font-family: "Roboto", "Raleway";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 2%;
-}
 
 .hero {
     background-color: var(--title-text-color);
+    text-align: center;
+}
+
+.hero-tittle {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: center;
+    
+    margin-top: 0;
+    margin-bottom: 40px;
+    color: var(--primary-text-color);
+}
+
+.button-primary {
+    display: inline-block;
+    color: rgba(77, 90, 229, 1);
+    padding-left: auto;
+    padding-right: auto;
+    background-color: black;
+    }
+
+.button {
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding: 16px, 32px, 16px, 32px;
+    color: #4D5AE5;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+
+}
+.button:hover {
+    color: rgba(64, 75, 191, 1)
 }
 
 h3 {
@@ -97,6 +148,11 @@ footer {
     font-size: 16px;
 }
 
+.hero-tittle a {
+    color: #FFFFFF;
+    }
+
+
 .page-nav a {
     color: rgba(33, 33, 33, 1);
 }
@@ -108,14 +164,6 @@ footer {
 
 .page-nav a:active {
     color: rgba(64, 75, 191, 1);
-}
-
-.button {
-    color: rgba(77, 90, 229, 1);
-}
-
-.button:hover {
-    color: rgba(64, 75, 191, 1)
 }
 
 .section1-title {
@@ -131,12 +179,7 @@ footer {
     background-color: var(--title-text-color);
 }
 
-.hero-tittle {
-    font-weight: 700; 
-    font-size: 56px; 
-    letter-spacing: 2%; 
-    line-height: 60px;
-}
+
 
 .section1-title {
     font-weight: 700;
