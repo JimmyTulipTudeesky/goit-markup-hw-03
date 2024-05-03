@@ -24,17 +24,17 @@ h3,
 h4,
 h5,
 h6,
-ul {
+p {
     margin: 0;
+}
+/* Утилиты */
+.list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 /* nav */
-
-.container {
-margin-left: auto;
-margin-right: auto;
-width: 1440px;
-}
 
 .logo {
 display: inline-block;
@@ -42,18 +42,40 @@ width: 71px;
 height: 21px;
 }
 
-.page-header {
-   
-}
-
 .site-nav {
+    display: flex;
     background-color: #FFFFFF;
+    margin-left: 70px;
 }
 
-.site-nav a {
-    color: rgba(46, 47, 66, 1);
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
 
+.site-nav .item:not(:last-child) {
+    margin-right: 40px;
+} 
+
+.site-nav .link {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgba(46, 47, 66, 1)
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+.adress-nav {
+    display: flex;
+    align-items: center;
+}
+
+.adress-nav .item + .item {
+    margin-left: 12px;
+}
+    
 
 .site-nav a:hover
 .site-nav a:focus {
@@ -72,9 +94,6 @@ height: 21px;
     color: #434455;;
 }
 
-.list {
-    list-style: none; 
-}
 
 /* уникальный контент */
 
@@ -113,7 +132,12 @@ height: 21px;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
+}
 
+.container1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1128px;
 }
 .button:hover {
     color: rgba(64, 75, 191, 1)
@@ -127,9 +151,31 @@ p {
     color: rgba(67, 68, 85, 1);
 }
 
+/* container */
+.container-Team {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 1440px;
+    height: 732px;
+}
+
 .section2 {
     background-color: rgba(244, 244, 253, 1);
-    ;
+    outline: 1px solid tomato;
+    padding: 0;
+    margin: 0;
+   list-style: none;
+
+   display: flex;
+   }
+
+.section2 > .section2-li {
+    outline: 1px solid teal;
+    flex-basis: calc(100% / 4);
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 footer {
@@ -178,7 +224,6 @@ footer {
 .contacts {
     background-color: var(--title-text-color);
 }
-
 
 
 .section1-title {
