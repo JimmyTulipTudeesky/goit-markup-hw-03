@@ -23,10 +23,26 @@ h2,
 h3,
 h4,
 h5,
-h6,
-p {
+h6 {
     margin: 0;
 }
+
+.img {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    margin: 0;
+    color: rgba(67, 68, 85, 1);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 /* Утилиты */
 .list {
     padding: 0;
@@ -36,35 +52,39 @@ p {
 
 /* nav */
 
-.logo {
-display: inline-block;
-width: 71px;
-height: 21px;
-}
-
 .site-nav {
     display: flex;
-    background-color: #FFFFFF;
     margin-left: 70px;
 }
 
-.main-nav {
+    .container .main-nav {
+    padding-left: auto;
+    padding-right: auto;
     display: flex;
     align-items: center;
-    justify-content: start;
+    justify-content: center;
+    width: 1400px;
 }
 
 .site-nav .item:not(:last-child) {
     margin-right: 40px;
 } 
 
-.site-nav .link {
+a .site-nav {
+display: block;
+padding-top: 100x;
+}
+
+.site-nav > .item {
     display: block;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    color: rgba(46, 47, 66, 1)
-    font-size: 15px;
+    padding-top: 100x;
+    padding-bottom: 40px;
+    color: rgba (46, 47, 66, 1)
     line-height: 1.2;
+}
+
+site-nav.item {
+display: block;
 }
 
 .adress-nav {
@@ -77,12 +97,12 @@ height: 21px;
 }
     
 
-.site-nav a:hover
-.site-nav a:focus {
+.site-nav link:hover
+.site-nav link:focus {
     color: rgba(64, 75, 191, 1);
 }
 
-.site-nav a:active {
+.site-nav link:active {
     color: #404BBF;
 }
 
@@ -103,27 +123,33 @@ height: 21px;
 }
 
 .hero-tittle {
+    display: block;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    padding-bottom: 40px;
+    color: var(--primary-text-color);
+
     font-weight: 700;
     font-size: 56px;
     line-height: 60px;
-    text-align: center;
-    
-    margin-top: 0;
-    margin-bottom: 40px;
-    color: var(--primary-text-color);
+    text-align: center;     
 }
+
 
 .button-primary {
     display: inline-block;
-    color: rgba(77, 90, 229, 1);
-    padding-left: auto;
-    padding-right: auto;
-    background-color: black;
+    color: white;
+    padding: 16px 32px 16px 32px;
+    background-color: #4D5AE5;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 200px;
     }
 
 .button {
     display: inline-block;
-    border: 1px solid transparent;
     border-radius: 6px;
     padding: 16px, 32px, 16px, 32px;
     color: #4D5AE5;
@@ -132,13 +158,9 @@ height: 21px;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
+    
 }
 
-.container1 {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1128px;
-}
 .button:hover {
     color: rgba(64, 75, 191, 1)
 }
@@ -147,35 +169,51 @@ h3 {
     color: #434455;
 }
 
-p {
-    color: rgba(67, 68, 85, 1);
+/* container */
+
+.qualities {
+display: flex;
+width: 1128px;
+margin-top: 70px;
+margin-bottom: 70px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 156px;
+    padding-right: 156px;
+    gap: 20px;
 }
 
-/* container */
+
 .container-Team {
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
     width: 1440px;
-    height: 732px;
-}
+    align-items: center;
+    text-align: center;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    }
 
 .section2 {
     background-color: rgba(244, 244, 253, 1);
-    outline: 1px solid tomato;
-    padding: 0;
-    margin: 0;
-   list-style: none;
+}
 
-   display: flex;
-   }
+.section2-title {
+    text-align: center;
+    padding-top: 100px;
+}
 
 .section2 > .section2-li {
-    outline: 1px solid teal;
     flex-basis: calc(100% / 4);
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.section2 ul {
+    display: flex;
 }
 
 footer {
@@ -196,8 +234,7 @@ footer {
 
 .hero-tittle a {
     color: #FFFFFF;
-    }
-
+}
 
 .page-nav a {
     color: rgba(33, 33, 33, 1);
@@ -233,7 +270,27 @@ footer {
 }
 
 .qualities-title {
+    padding-bottom: 10px;
+    
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 2%;
+    }
+
+.container-footer {
+    display: block;
+    max-width: 1440px;
+    padding-top: 30px;
+    padding-left: 156px;
+    padding-right: auto;
+}
+
+img.logo-footer {
+    display: block;
+    margin-top: 10px;
+}
+
+.footer-text {
+    display: block;
+    margin-top: 10px;
 }
