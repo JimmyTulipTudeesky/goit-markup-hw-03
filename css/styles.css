@@ -5,12 +5,23 @@
 }
 
 :root {
-    --primary-text-color: #FFFFFF;
+    
+    --primary-brand-color: #4D5AE5;
+    --pressed-state-color: #404BBF;
+    --dark-color: #2E2F42;
+    --success-color: #31D0AA;
+    --text-color: #434455;
+    --subtle-text-color: #8E8F99;
+    --accent-text-color: #E7E9FC;
+    --light-color: #F4F4FD;
+    --white-background-color: #FFFFFF;
     --title-text-color: #2E2F42;
-    --link-color: #4D5AE5;
+    --modal-background-color: #FCFCFC;
 }
 
 body {
+    color: var(--text-color);
+    
     font-family: "Roboto", "Raleway";
     font-weight: 400;
     font-size: 16px;
@@ -23,7 +34,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
     margin: 0;
 }
 
@@ -33,57 +45,50 @@ h6 {
 }
 
 p {
-    margin: 0;
     color: rgba(67, 68, 85, 1);
 }
 
 ul {
     margin: 0;
     padding: 0;
-    list-style-type: none;
-}
-
-/* Утилиты */
-.list {
-    padding: 0;
-    margin: 0;
     list-style: none;
 }
 
+/* Утилиты */
+.link {
+    list-style: none;
+}
+
+.container {
+    padding-left: auto;
+    padding-right: auto;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    width: 1400px;
+}
+
 /* nav */
+
+.main-nav {
+    justify-content: center;
+}
 
 .site-nav {
     display: flex;
     margin-left: 70px;
 }
 
-    .container .main-nav {
-    padding-left: auto;
-    padding-right: auto;
+.auth-nav {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1400px;
+    margin-left: auto;
 }
 
 .site-nav .item:not(:last-child) {
     margin-right: 40px;
 } 
 
-a .site-nav {
-display: block;
-padding-top: 100x;
-}
-
-.site-nav > .item {
-    display: block;
-    padding-top: 100x;
-    padding-bottom: 40px;
-    color: rgba (46, 47, 66, 1)
-    line-height: 1.2;
-}
-
-site-nav.item {
+.site-nav.item {
 display: block;
 }
 
@@ -95,10 +100,23 @@ display: block;
 .adress-nav .item + .item {
     margin-left: 12px;
 }
-    
+   
+.auth-nav .item+.item {
+    margin-left: 20px;
+   }
 
-.site-nav link:hover
-.site-nav link:focus {
+.site-nav .link {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    color: var(--title-text-color:);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus {
     color: rgba(64, 75, 191, 1);
 }
 
@@ -106,12 +124,10 @@ display: block;
     color: #404BBF;
 }
 
-.meil {
-    color: var(--title-text-color);
-}
-
-.phone {
-    color: #434455;;
+.auth-nav .link {
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--title-text-color:);
 }
 
 
@@ -172,10 +188,10 @@ h3 {
 /* container */
 
 .qualities {
-display: flex;
-width: 1128px;
-margin-top: 70px;
-margin-bottom: 70px;
+    display: flex;
+    width: 1128px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 156px;
@@ -184,7 +200,7 @@ margin-bottom: 70px;
 }
 
 
-.container-Team {
+.container {
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -193,8 +209,6 @@ margin-bottom: 70px;
     width: 1440px;
     align-items: center;
     text-align: center;
-    padding-top: 70px;
-    padding-bottom: 70px;
     }
 
 .section2 {
@@ -216,8 +230,12 @@ margin-bottom: 70px;
     display: flex;
 }
 
+.section-portfolio-title {
+text-align: center;
+}
+
 footer {
-    background-color: rgba(46, 47, 66, 1);
+    background-color: var(--title-text-color);
 }
 
 .page-nav {
