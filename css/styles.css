@@ -5,7 +5,6 @@
 }
 
 :root {
-    
     --primary-brand-color: #4D5AE5;
     --pressed-state-color: #404BBF;
     --dark-color: #2E2F42;
@@ -46,6 +45,7 @@ p {
 
 p {
     color: rgba(67, 68, 85, 1);
+    
 }
 
 ul {
@@ -210,6 +210,31 @@ h3 {
     align-items: center;
     text-align: center;
     }
+    .container-Portfolio {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 1128px;
+        heigt: 1000px;
+    }
+
+.team {
+    width: 1440px;
+    height: 732px;
+}
+
+.card-set {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    flex-wrap: wrap;    
+}
+
+.item-card {
+    flex-basis: calc((100% - 30px) / 3);
+}
 
 .section2 {
     background-color: rgba(244, 244, 253, 1);
@@ -228,10 +253,15 @@ h3 {
 
 .section2 ul {
     display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 .section-portfolio-title {
 text-align: center;
+margin-top: 150px;
+margin-bottom: 50px;
 }
 
 footer {
@@ -246,8 +276,9 @@ footer {
     background-color: var(--primary-text-color);
 }
 
-.text {
+.qualities-text {
     font-size: 16px;
+    text-align: left;
 }
 
 .hero-tittle a {
