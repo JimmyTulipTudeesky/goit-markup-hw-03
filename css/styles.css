@@ -64,7 +64,6 @@ ul {
     padding-right: auto;
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     width: 1400px;
 }
 
@@ -153,7 +152,6 @@ display: block;
     text-align: center;     
 }
 
-
 .button-primary {
     display: inline-block;
     color: white;
@@ -174,7 +172,6 @@ display: block;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
-    
 }
 
 .button:hover {
@@ -189,53 +186,59 @@ h3 {
 
 .qualities {
     display: flex;
-    width: 1128px;
     margin-top: 70px;
     margin-bottom: 70px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 156px;
-    padding-right: 156px;
     gap: 20px;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
-
 
 .container {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    width: 1440px;
+    margin: 0 auto;
+    padding: 0, 15px;
+    max-width: 1440px;
     align-items: center;
     text-align: center;
-    }
+    flex-wrap: wrap;
+}
 
-    .container-Portfolio {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 15px;
-        padding-right: 15px;
-        width: 1128px;
-        heigt: 1000px;
-    }
+.container.section1 {
+    max-width: 1128px;
+    max-height: 104;
+    margin: 120px, auto, 120px;
+    gap: 34px;
+
+}
 
 .team {
     width: 1440px;
     height: 732px;
 }
 
+.thumb {
+overflow: hidden;
+background-color: white;
+}
+
+.container .Portfolio {
+    margin: 0 auto;
+        padding: 0, 15px;
+        max-width: 1128px;
+}
+
 .card-set {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    gap: 10px;
+    gap: 24px;
     flex-wrap: wrap;
-   }
+}
 
 .card {
     display: flex;
-    gap: 10px;
+    gap: 24px;
     max-width: 360px;
     height: 420px;
     margin: 0 auto;
@@ -251,27 +254,29 @@ h3 {
     background-color: rgba(244, 244, 253, 1);
 }
 
-.section2-title {
+.section2-title, .section-portfolio-title {
     text-align: center;
-    padding-top: 100px;
+    padding 0;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    width: 100%;
 }
 
 .section2 > .section2-li {
     flex-basis: calc(100% / 4);
-    margin-left: 15px;
-    margin-top: 15px;
 }
 
 .section2 ul {
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    
+    max-width: 1128px;
+    gap: 20px;
 }
 
-.portfolio-title {
-text-align: left;
-padding: 32px 16px;
+.section1-title {
+    text-align: center;
+    display: none;
 }
 
 footer {
@@ -292,7 +297,7 @@ footer {
 }
 
 .hero-tittle a {
-    color: #FFFFFF;
+    color: #FFF;
 }
 
 .page-nav a {
@@ -319,8 +324,10 @@ footer {
 /* footer */
 .contacts {
     background-color: var(--title-text-color);
+    margin: 0 auto;
+    padding: 0, 15px;
+    max-width: 1440px;
 }
-
 
 .section1-title {
     font-weight: 700;
@@ -330,26 +337,14 @@ footer {
 
 .qualities-title {
     padding-bottom: 10px;
-    
     font-weight: 500;
     font-size: 20px;
     letter-spacing: 2%;
     }
 
-.container-footer {
-    display: block;
-    max-width: 1440px;
-    padding-top: 30px;
-    padding-left: 156px;
-    padding-right: auto;
-}
 
 img.logo-footer {
     display: block;
-    margin-top: 10px;
+
 }
 
-.footer-text {
-    display: block;
-    margin-top: 10px;
-}
